@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery.min.js"     type="text/javascript"> </script>
+		<script src="js/jquery-ui.min.js"  type="text/javascript"> </script>
+		<script src="js/helper.js"         type="text/javascript"> </script>
+		<script src="js/main.js"           type="text/javascript"> </script>
+		
+		<link rel="stylesheet" type="text/css" href="styles/table.css"  >
+		<link rel="stylesheet" type="text/css" href="styles/style.css"  >
+	
+
+		<script>
+		  $(function() {
+		    $( "#accordion" ).accordion();
+		  });
+	  </script>
+
+  	</head>
+	<body>
+
+		<h1 align="center">Sorting Algorithms Animation</h1>
+		
+		<div align="center" id="container">
+    		<div class="box" id="id1">7</div>
+    		<div class="box" id="id2">3</div>
+    		<div class="box" id="id3">6</div>    		
+			<div class="box" id="id4">4</div>   
+			<div class="box" id="id5">2</div>   
+			<div class="box" id="id6">1</div>   
+			<div class="box" id="id7">0</div>   
+			<div class="box" id="id8">9</div> 
+			<div class="box" id="id9">8</div> 
+			<div class="box" id="id10">5</div>
+			<div class="box" id="id11">8</div>
+			<div class="box" id="id12">3</div>
+			<div class="box" id="id13">6</div>
+			<div class="box" id="id14">1</div>
+			<div class="box" id="id15">4</div>       
+			<div class="resetButon" id="id16">
+				<button onclick="reset()" title="To start new animation, you should clear elements!">
+					   <img src="pics/reset.png"  width="60" height="60">Clear Elements
+				</button>
+			</div> 
+		</div>
+		<br>
+
+		<div id="accordion">
+			<h3><a href="#" title="Click for information about selection sort.">Selection Sort</a></h3>
+			<div>
+			<p>
+				<strong>Selection sort</strong> finds the minimum value, swaps it with the value in the first position, and repeats these steps for the remainder of the list. It does no more than n swaps, and thus is useful where swapping is very expensive.	It has all best, worst, and average complexity with n*n.
+			</p>			
+			<p>	
+				<button type="button" onclick="selectionSortAnimation()">Start Animation</button>
+			</p>	
+			</div>
+
+			<h3><a href="#" title="Click for information about insertion sort.">Insertion Sort</a></h3>
+			<div>
+			<p>
+				 <strong>Insertion sort</strong> works by taking elements from the list one by one and inserting them in their correct position into a new sorted list. In arrays, the new list and the remaining elements can share the array's space, but insertion is expensive.
+			</p>
+			<p>	
+				<button type="button" onclick="insertionSortAnimation()">Start Animation</button>
+			</p>	
+			</div>
+			
+			<h3><a href="#" title="Click for information about quick sort.">Quick Sort</a></h3>
+			<div>
+			<p>
+				<strong>Quicksort</strong> is a divide and conquer algorithm which divides list according to selected pivot. Elements smaller than the pivot are moved before it and all greater elements are moved after it, then both are sorted recursively with the same process.
+			</p>
+			
+			<p>	
+				Animation is not ready yet.
+			</p>
+			</div>
+			<h3><a href="#" title="Click for information about merge sort.">Merge Sort</a></h3>
+			<div>
+			<p>
+				<strong>Merge sort</strong> divides the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted). Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+			</p>
+			<p>	
+				Animation is not ready yet.
+			</p>
+			</div>
+
+			<h3><a href="#" title="Click for information about count sort.">Count Sort</a></h3>
+			<div>
+			<p>
+				<strong>Count sort</strong> works for only upper bound of the target data is defined. It creates a new array with length this bound and maps all elements to this array. Finally, it transfer new array to old array with exact location. It has O(n) time complexity. 
+			</p>
+			<p> 	
+				Animation is not ready yet.
+			</p>
+			</div>	
+
+		</div>
+
+		<!--
+		<div>
+			<button type="button" onclick="changePosition(0,1)">Change</button>
+			<button type="button" onclick="highlightTwoElem(1,2)">High01</button>
+			<button type="button" onclick="highlightTwoElem(3,4)">High12</button>
+			<button type="button" onclick="clearArray()">clear</button>
+			<button type="button" onclick="prepareArray()">Prepare</button>
+			<button type="button" onclick="selectionSort()">Sort</button>
+			<button type="button" onclick="fade()">fade</button>
+			<button type="button" onclick="insertionSort()">insert</button>
+			<button type="button" onclick="selectionSortAnimation()">Selection Sort</button>
+			<button type="button" onclick="reset()">Reset</button>
+		</div>
+		-->
+
+	</body>
+
+
+</html> 
